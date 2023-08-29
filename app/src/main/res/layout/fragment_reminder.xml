@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.reminders.ReminderFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/remindersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adViewReminder"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCatchy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textViewCatchyLine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Looks Like you Haven't Add any Reminder"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
